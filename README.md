@@ -24,5 +24,6 @@ conda install artemis
 ##We are switching to Prairie Warblers because the banana DNA didn't have enough information for what we wanted to do.
 
 Download R
- conda install r-base
+ conda install r-base--> did not open R so different commands were used
+ 
  
