@@ -26,4 +26,10 @@ conda install artemis
 Download R
  conda install r-base--> did not open R so different commands were used
  
+ Try new installation of R within conda 
+  1) conda create -n r_env r-essentials r-base --> create new conda environment 
+ 
+  2) conda activate r_env --> activate environment 
+ 
+  3) R --> to open r 
  
