@@ -22,3 +22,7 @@ conda install artemis
 "The Artemis Comparison Tool (ACT) allows an interactive visualisation of comparisons between complete genome sequences and associated annotations.  It is possible to identify regions of similarity, insertions and rearrangements at any level from the whole genome to base-pair differences." https://academic.oup.com/bioinformatics/article/21/16/3422/216339?login=true
 
 ##We are switching to Prairie Warblers because the banana DNA didn't have enough information for what we wanted to do.
+
+Download R
+ conda install r-base
+ 
