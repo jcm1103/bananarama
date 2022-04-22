@@ -32,4 +32,6 @@ Download R
   2) conda activate r_env --> activate environment 
  
   3) R --> to open r 
+
+##Next steps are to run a DAPC and Isolation by Distance for Prairie Warblers in New England
  
