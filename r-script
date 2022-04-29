@@ -1,0 +1,58 @@
+## PRAW DAPC Spring 2022
+## Genomics and Bioinformatics, Final Project
+### code borrowed from Logan Maxwell
+
+library(adegenet)
+
+### set a working directory for analysis
+setwd("/Users/alexaaubrey/Desktop/gen711_lab/Final_Project/DAPC")
+
+# load the adegenet package needed to run analysis
+library(adegenet)
+
+## import the STR file
+PRAW <- read.structure("/Users/alexaaubrey/Desktop/gen711_lab/Final_Project/PRAW_genotypes_23March22.str", row.marknames=1, onerowperind=TRUE, n.ind=195, n.loc=11, col.lab=1, col.pop=2, ask=TRUE)
+
+########################################################################
+### Cross validation - how many PCs to retain? 
+########################################################################
+
+## load package
+library("poppr")
+
+set.seed(999)
+pramx <- xvalDapc(tab(PRAW, NA.method = "mean"), pop(PRAW))
+
+
+## running twice to determine exact amount of PCs to keep; changed range to 90:110
+set.seed(999)
+system.time(pramx <- xvalDapc(tab(PRAW, NA.method = "mean"), pop(PRAW),
+                              n.pca = 90:110, n.rep = 1000,
+                              parallel = "snow", ncpus = 4L))
+pramx[-1]
+
+scatter(pramx$DAPC, cex = 2, legend = TRUE,
+        clabel = FALSE, posi.leg = "bottomleft", scree.pca = TRUE,
+        posi.pca = "topleft", cleg = 0.75, xax = 1, yax = 2, inset.solid = 1)
+        
+## number of pca saved = 97; number of discrimminant functions = 4
+
+## add the site names for the legend before running the DAPC
+popnamesPRAW <- c("AR", "BillsLn/Perry", "BowBog", "DestinyWayGP", "MA", "NY", "OldMillLee/PWRln", "PetersPit", "Severino", "Woodhill")
+
+popNames(PRAW) <- popnamesPRAW
+
+PRAWdapc <- dapc(PRAW)
+
+## moving and adding legend and labels to plot
+scatter(PRAWdapc, posi.da="bottomright", bg="white",
+        pch=17:22, cstar=0, scree.pca=TRUE,
+        posi.pca="bottomleft", label = NULL)
+
+scatter(PRAWdapc, posi.da="bottomright", bg="white",
+        pch=17:22, cstar=0, scree.pca=TRUE,
+        posi.pca="bottomleft", leg=TRUE, posi.leg= "topleft", label = NULL)
+
+scatter(PRAWdapc, posi.da="bottomright", bg="white",
+        pch=17:22, cstar=0, scree.pca=TRUE, ratio.pca = 0.18,
+        posi.pca="top", leg=TRUE, posi.leg= "bottomleft", label = NULL, cleg = 0.55, )
