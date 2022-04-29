@@ -18,6 +18,10 @@ We chose to examine the population structure of 195 Praries Warblers at 10 diffe
 ## Methods
 ## Findings
 ![plot](figures/PRAW_DAPC_Final.png)
+Figure 1. ALEXA
 ![plot](figures/DAPC_Cross_Validation.png)
+Figure 2. ALEXA
 ![plot](figures/DAPC_Cross_Validation_2.png)
+Figure 3. ALEXA
 ![plot](figures/IBD_Plot_PRAW.png)
+Figure 4. ALEXA
