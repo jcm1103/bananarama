@@ -1,0 +1,60 @@
+## Isolation by Distance Test for PRAW
+#### Spring 2022, GEN 711 Final project
+#### code borrowed from Logan Maxwell
+
+### set a working directory for the analysis
+setwd("/Users/alexaaubrey/Desktop/gen711_lab/Final_Project/IBD/")
+
+###########################################################
+##Data for 25 populations (sampling location)
+###############################################################
+
+## load package
+library(adegenet)
+
+#read in str file; edited file with no AR population
+PRAW <- read.structure("/Users/alexaaubrey/Desktop/gen711_lab/Final_Project/PRAW_genotypes_23March22_no2.str", row.marknames=1, onerowperind=TRUE, n.ind=166, n.loc=11, col.lab=1, col.pop=2, ask=F)
+
+#read in coords file; edited file with no AR population
+PRAWpop9 <- read.csv("/Users/alexaaubrey/Desktop/gen711_lab/Final_Project/IBD/IBD_PRAW_GEN_711_Sites_Loc_NoAR.csv", header =T)
+
+## renaming the sites in the genid object!
+popnamesPRAW <- c("BillsLn/Perry", "BowBog", "DestinyWayGP", "MA", "NY", "OldMillLee/PWRlnOMLTen", "PetersPit", "Severino", "Woodhill")
+
+##adding coordinates
+PRAW$other <- PRAWpop9
+
+## running IBD
+IBDPRAW <- genind2genpop(PRAW, process.other=T)
+IBDPRAW$other
+
+## genetic distance matrix
+Dgen1 <- dist.genpop(IBDPRAW,method=2)
+
+### geographic distance in kms
+Dgeo <- fields::rdist.earth(PRAWpop9[,2:3], miles=F)
+Dgeo <- as.dist(Dgeo)
+
+## mantel test
+IBDPRAW <- mantel.randtest(Dgen1,Dgeo)
+IBDPRAW
+
+### ERROR: Error in testmantel(nrepet, col, as.matrix(m1), as.matrix(m2)) : 
+# NA/NaN/Inf in foreign function call (arg 4)
+
+# appears no significant IBD! -0.1900 and 0.797 p value!
+
+# Plotting IBD Chart
+plot(IBDPRAW, main="", xlab="Simulated Mantel's r (slope of line)", ylab="Number of Samples")
+  box()
+plot(Dgeo, Dgen1, xlab = "Geographic distance (km)", ylab = "Genetic distance")
+abline(lm(Dgen1~Dgeo), col="red",lty=2)
+
+#this creates denisty plot of the IBD
+library(MASS)
+dens <- kde2d(Dgeo,Dgen1, n=300)
+myPal <- colorRampPalette(c("white","blue","gold", "orange", "red"))
+plot(Dgeo, Dgen1, pch=20,cex=.5, xlab = "Geographic Distance (km)", ylab = "Genetic Distance")
+image(dens, col=transp(myPal(300),.7), add=TRUE)
+abline(lm(Dgen1~Dgeo))
+title("Isolation by Distance")
