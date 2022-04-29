@@ -20,6 +20,7 @@ PRAW <- read.structure("/Users/alexaaubrey/Desktop/gen711_lab/Final_Project/PRAW
 ## load package
 library("poppr")
 
+
 set.seed(999)
 pramx <- xvalDapc(tab(PRAW, NA.method = "mean"), pop(PRAW))
 
