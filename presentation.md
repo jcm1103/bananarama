@@ -16,6 +16,12 @@ We chose to examine the population structure of 195 Praries Warblers at 10 diffe
  -isolation by distance with mentel test- statisticial test of correlation between two matrices (genetic and geopraphical distance) geographic distance versus genetic distance -- determine correlation based on slope value
 
 ## Methods
+put bioinformatic analysis here
+set up of our files-- what format they were in
+what programs we installed with the conda environment
+how we ran the analysis
+issues?
+
 ## Findings
 ![plot](figures/PRAW_DAPC_Final.png) 
 
