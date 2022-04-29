@@ -1,6 +1,6 @@
 # Gen711 Final Project- Prarie Warbler Populations
 ## Background
-We chose to examine the population structure of 195 Praries Warblers at 10 different sites. This project was of interest, as two members of the group- Alexa Aubrey and Brighid Lamprey- work as Undergraduate researchers in Adrienne Kovach's lab, examining Prarie Warbler populations. In this abbreviated study, the sites we chose to examine were six local New Hampshire sites (Bow Bog, Destiny Way Gravelpit, Old Mill Lee Power Line, Peter's Gravelpit, Severino, and Woodhill), and one site from Maine (Bills Lane/Perry Oliver), Massachusetts, New York, and Arkansas. The sites were selectively chosen as they represent the location of Prarie Warbler populations within our home states, with Arkansas as an outlier to examine if there was increased genetic diversity based on geographical distance. The samples used were collected from collaborators and from Kovach's lab where they underwent DNA extraction and PCR amplification with 11 different microsatellites. From the data collected, a Discrimination Analysis of Principle Components (DAPC) and an Isolation By Distance with Mantel test were run. The DAPC was performed to explore the structure of Prarie Warbler populations without making assumptions of Panmixia (random mating) and the Isolation by Distance was performed to determine correlation between genetic distance and geographic distance, which was represented by a slope value.
+We chose to examine the population structure of 195 Praries Warblers at 10 different sites. This project was of interest, as two members of the group- Alexa Aubrey and Brighid Lamprey- work as Undergraduate researchers in Adrienne Kovach's lab, examining Prarie Warbler populations. In this abbreviated study, the sites we chose to examine were six local New Hampshire sites (Bow Bog, Destiny Way Gravelpit, Old Mill Lee Power Line, Peter's Gravelpit, Severino, and Woodhill), and one site from Maine (Bills Lane/Perry Oliver), Massachusetts, New York, and Arkansas. The sites were selectively chosen as they represent the location of Prarie Warbler populations within our home states, with Arkansas as an outlier to examine if there was increased genetic diversity based on geographical distance. The samples used were collected from collaborators and from Kovach's lab where they underwent DNA extraction and PCR amplification with 11 different microsatellites. From the data collected, a Discriminate Analysis of Principal Components (DAPC) and an Isolation By Distance with Mantel test were run. The DAPC was performed to explore the structure of Prarie Warbler populations without making assumptions of Panmixia (random mating) and the Isolation by Distance was performed to determine correlation between genetic distance and geographic distance, which was represented by a slope value.
 
 ## Methods
 put bioinformatic analysis here. peak scanner binning process into excel usd for structure.
@@ -11,7 +11,7 @@ issues?
 ## Findings
 ![plot](figures/PRAW_DAPC_Final.png) 
 
-Figure 1. ALEXA
+Figure 1. DAPC (Discriminate Analysis of Principal Components) visualizing genetic variation among sampled locations. Symbols correspond to unique sample sites. The plot indicates little spatial patterns.
 
 
 ![plot](figures/DAPC_Cross_Validation.png)
