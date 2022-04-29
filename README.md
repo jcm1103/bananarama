@@ -26,3 +26,6 @@ Figure 3. ALEXA
 ![plot](figures/IBD_Plot_PRAW.png)
 
 Figure 4. ALEXA
+
+### presentation 
+a google slides was made 
