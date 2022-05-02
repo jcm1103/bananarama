@@ -26,6 +26,7 @@ Figure 3.
 Figure 4. Isolation by Distance test against genetic distance and geographic distance for 9 out of the 10 Prairie Warbler Sites. Arkansas (AR) was dropped from this test since it was the geographic outlier.
 
 ### Conclusion
+Due to the clustering pattern of shown on the DAPC we see that there is a high genetic diversity between populations. As seen in the Isolation by Distance, we can tell that the genetic variation is not due to geographic distance since the P-value is high and the Correlation Coefficient is negative.
 
 ### presentation 
 a google slides was made 
