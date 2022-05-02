@@ -28,5 +28,5 @@ Figure 4. Isolation by Distance test against genetic distance and geographic dis
 ### Conclusion
 Due to the clustering pattern of shown on the DAPC we see that there is a high genetic diversity between populations. As seen in the Isolation by Distance, we can tell that the genetic variation is not due to geographic distance since the P-value is high and the Correlation Coefficient is negative.
 
-### presentation 
-a google slides was made 
+### Presentation 
+A google slides was made.
