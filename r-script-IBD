@@ -42,7 +42,7 @@ IBDPRAW
 ### ERROR: Error in testmantel(nrepet, col, as.matrix(m1), as.matrix(m2)) : 
 # NA/NaN/Inf in foreign function call (arg 4)
 
-# appears no significant IBD! -0.1900 and 0.797 p value!
+# appears no significant IBD! -0.3101362 and 0.872  p value!
 
 # Plotting IBD Chart
 plot(IBDPRAW, main="", xlab="Simulated Mantel's r (slope of line)", ylab="Number of Samples")
