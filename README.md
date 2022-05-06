@@ -5,9 +5,6 @@ We chose to examine the population structure of 195 Prairies Warblers at 10 diff
 ## Methods
 Blood samples were taken from Prairie Warblers at multiple sampling sites. PCR products of microsatellite loci were analyzed using fragment analysis. Alleles were scored using PeakScanner​ and entered into Google Sheets. Calls were binned using analysis completed independently by Melissa Bauer, Alexa Aubrey, and Brighid Lamprey. R Console/RStudio and the ‘adegenet’ package were installed. A structure file was created to determine the number of PCAs and DAs to keep. A DAPC was run. The structure file was used to create a genetic distance matrix. A Mantel Test was run and an IBD plot was created.
 
-do we need to put script here?? errors??
-
-
 ## Findings
 ![plot](figures/PRAW_DAPC_Final.png) 
 
@@ -16,11 +13,12 @@ Figure 1. DAPC (Discriminate Analysis of Principal Components) visualizing genet
 
 ![plot](figures/DAPC_Cross_Validation.png)
 
-Figure 2. 
+Figure 2. Resulting from a Cross Validation. This is a procedure in which a certain amount of data is left out, a DAPC is run and then see if the data that was left out can be correctly placed into the population.
+
 
 ![plot](figures/DAPC_Cross_Validation_2.png)
 
-Figure 3.
+Figure 3. A zoomed in cross validation looking specfically at 90 to 110.
 
 
 ![plot](figures/IBD_Plot_PRAW.png)
