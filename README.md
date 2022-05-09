@@ -28,5 +28,16 @@ Figure 4. Isolation by Distance test against genetic distance and geographic dis
 ## Conclusion
 Due to the clustering pattern of shown on the DAPC we see that there is a high genetic diversity between populations. As seen in the Isolation by Distance, we can tell that the genetic variation is not due to geographic distance since the P-value is high and the Correlation Coefficient is negative, supporting that the populations can be treated and managed as one.
 
+## Citations 
+Wilson, A. G., Arcese, P., Chan, Y. L., & Patten, M. A. (2010). Micro-spatial genetic structure in song sparrows (Melospiza melodia). Conservation Genetics, 12(1), 213–222. https://doi.org/10.1007/s10592-010-0134-4
+
+Rare Book Division, the New York Public Library. “110. The Prairie Warbler (Sylvicola discolor). 111. The Black-throated Bunting (Emberiza americana).” The New York Public Library Digital Collections. 1842-1844. 
+
+High Throughput Method for Analysis of Repeat Number for 28 Phase Variable Loci of Campylobacter jejuni Strain NCTC11168 - Scientific Figure on ResearchGate. Available from: https://www.researchgate.net/figure/Analysis-of-multiplex-fragment-analysis-data-in-PeakScanner-A-PeakScanner-application_fig1_305711309 [accessed 2 May, 2022] 
+
+Acknowledgments: Stephanie Copland, Katie Shink, Melissa Bauer, Logan Maxwell, Adrienne Kovach, Matthew Tarr, Mike Akresh,  and Neil Gifford
+
+(Kovach and Tarr, 2018). https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource007340_Rep10568.pdf
+
 ## Presentation 
 A google slides was made. https://docs.google.com/presentation/d/1kYWnE1YqCtpR69xZNnRSPwhJhXa4fu4M5RyhJn1ACWA/edit#slide=id.p 
