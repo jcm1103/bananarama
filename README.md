@@ -8,7 +8,7 @@ Blood samples were taken from Prairie Warblers at multiple sampling sites. PCR p
 ## Findings
 ![plot](figures/PRAW_DAPC_Final.png) 
 
-Figure 1. DAPC (Discriminate Analysis of Principal Components) visualizing genetic variation among sampled locations. Symbols correspond to unique sample sites. The plot indicates little spatial patterns.
+Figure 1. DAPC (Discriminate Analysis of Principal Components) visualizing genetic variation among sampled locations. The PCA indicates the variance trend to avoid under and overfitting. Symbols on the plot correspond to unique sample sites. The plot indicates little spatial patterns. The plot reveals similarity between the BowBog (a NH site) and Arkansas (AR) site, and similarities between the two gravel pit sites. Massachusetts was show to be isolated from other states, compared to New York (NY) which was in the middle of the plot showing similarities to New Hampshire (NH) and Maine (ME). 
 
 
 ![plot](figures/DAPC_Cross_Validation.png)
@@ -23,7 +23,7 @@ Figure 3. A zoomed in cross validation looking specfically at 90 to 110.
 
 ![plot](figures/IBD_Plot_PRAW.png)
 
-Figure 4. Isolation by Distance test against genetic distance and geographic distance for 9 out of the 10 Prairie Warbler Sites. Arkansas (AR) was dropped from this test since it was the geographic outlier.
+Figure 4. Isolation by Distance test against genetic distance and geographic distance for 9 out of the 10 Prairie Warbler Sites. Arkansas (AR) was dropped from this test since it was the geographic outlier. With a R-value of -0.3101 and a p-value of 0.872 there was no significant correlation observed. The lack of signficant correlation indicated that the genetic makeup of these populations were not impacted by their distance from each other. 
 
 ## Conclusion
 Due to the clustering pattern of shown on the DAPC we see that there is a high genetic diversity between populations. As seen in the Isolation by Distance, we can tell that the genetic variation is not due to geographic distance since the P-value is high and the Correlation Coefficient is negative, supporting that the populations can be treated and managed as one.
