@@ -6,7 +6,7 @@ We chose to examine the population structure of 195 Prairies Warblers at 10 diff
 Blood samples were taken from Prairie Warblers at multiple sampling sites. PCR products of microsatellite loci were analyzed using fragment analysis. Alleles were scored using PeakScanner​ and entered into Google Sheets. Calls were binned using analysis completed independently by Melissa Bauer, Alexa Aubrey, and Brighid Lamprey. R Console/RStudio and the ‘adegenet’ package were installed. A structure file was created to determine the number of PCAs and DAs to keep. A DAPC was run. The structure file was used to create a genetic distance matrix. A Mantel Test was run and an IBD plot was created.
 
 ## Findings
-![plot](figures/PRAW_DAPC_Final.png) 
+![plot](figures/InkedPRAW_DAPC_Final_LI.jpg) 
 
 Figure 1. DAPC (Discriminate Analysis of Principal Components) visualizing genetic variation among sampled locations. The PCA indicates the variance trend to avoid under and overfitting. Symbols on the plot correspond to unique sample sites. The plot indicates little spatial patterns. The plot reveals similarity between the BowBog (a NH site) and Arkansas (AR) site, and similarities between the two gravel pit sites. Massachusetts was show to be isolated from other states, compared to New York (NY) which was in the middle of the plot showing similarities to New Hampshire (NH) and Maine (ME). 
 
